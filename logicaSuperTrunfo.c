@@ -169,18 +169,24 @@ int main() {
   float dens_pop_inv2 = 1 / dens_pop2;
 
 
-// Área para comparação de atributos
+// Área para comparação de atributos e exibição dos resultados
+
+printf("///       ***Comparação das cartas***       //// \n\n");
+
+
+printf("Carta 1 -> %s:, %d \n", cidade1, pop1);
+printf("Carta 2 -> %s:, %d \n", cidade2, pop2);
 
 if(pop1 > pop2){
-    
-    printf("Carta 1 venceu \n");
 
-}else
+    printf("Carta 1 venceu -> %d", pop1);
 
-    printf("Carta 2 venceu \n");
-{
-    
-}
+}else{
+
+    printf("Carta 2 venceu -> %d", pop2);
+
+}    
+
 
     
 
