@@ -179,11 +179,11 @@ printf("Carta 2 -> %s:, %.2f \n", cidade2, pop2);
 
 if(pop1 > pop2){
 
-    printf("Carta 1 venceu -> %.2f", pop1);
+    printf("Carta 1 venceu! %s", cidade1);
 
 }else{
 
-    printf("Carta 2 venceu -> %.2f", pop2);
+    printf("Carta 2 venceu! %s", cidade2);
 
 }    
 
