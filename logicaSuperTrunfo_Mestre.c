@@ -13,7 +13,8 @@ int main() {
   char cidade1[30] = "Maranguape";
   float area1 = 20000;
   float pib1 = 100000;
-  int atributo1;
+  int atributo1, resultado1;
+  
 
 
 //variáveis para armazenar os valores da carta 2
@@ -25,8 +26,7 @@ int main() {
   char cidade2[30] = "Maraponga";
   float area2 = 12131;
   float pib2 = 45646;
-  int atributo2;
-
+ int atributo2, resultado2;
   
 
   
@@ -52,6 +52,49 @@ int main() {
     printf("5 -> Densidade demográfica \n");
 
         scanf("%d", &atributo1);
+    switch (atributo1)
+    {
+
+case 1:
+
+    printf("Você escolheu população");
+    resultado1 = pop1 > pop2 ? 1:0;
+
+    break;
+
+case 2:
+
+    printf("Você escolheu área");
+    resultado1 = area1 > area2 ? 1:0;
+
+    break;
+
+case 3:
+
+    printf("Você escolheu PIB");
+    resultado1 = pib1 > pib2 ? 1:0;
+
+    break;
+
+case 4:
+
+    printf("Você escolheu ponotos turisticos");
+    resultado1 = pontos_turisticos1 > pontos_turisticos2 ? 1:0;
+
+case 5:
+
+    printf("Você escolheu densidade demográfica");
+    resultado1 = dens_pop1 < dens_pop2 ? 1:0;
+
+    break;
+
+    
+    default:
+
+    printf("Escolha uma opção válida");
+
+    break;
+    }    
 
 
     printf("///   ***Bem vindo ao super trunfo \n\n***   ///");
@@ -70,38 +113,66 @@ int main() {
 
         }
 
-   switch (opcao) {
 
-
-//população
+    switch (atributo2)
+    {
 
 case 1:
-    printf("Carta 1 -> %s: População: %d \n", cidade1, pop1);
-    printf("Carta 2 -> %s: População: %d \n\n", cidade2, pop2);
 
-        if(pop1 > pop2){
-    printf("Carta %d Venceu!", numero_carta1);
-
-}
-    else if(pop1 < pop2){
-    printf("Carta %d Venceu!", numero_carta2);
-}
-
-    else{
-        if(pop1 == pop2){
-    printf("Empate!");
-}
-       
-}
+    printf("Você escolheu população");
+    resultado2 = pop1 > pop2 ? 1:0;
 
     break;
 
+case 2:
 
+    printf("Você escolheu área");
+    resultado2 = area1 > area2 ? 1:0;
 
-default:
+    break;
 
-    printf("Opção inválida, escolha uma das opcções acima.");
-}
+case 3:
+
+    printf("Você escolheu PIB");
+    resultado2 = pib1 > pib2 ? 1:0;
+
+    break;
+
+case 4:
+
+    printf("Você escolheu ponotos turisticos");
+    resultado2 = pontos_turisticos1 > pontos_turisticos2 ? 1:0;
+
+case 5:
+
+    printf("Você escolheu densidade demográfica");
+    resultado2 = dens_pop1 < dens_pop2 ? 1:0;
+
+    break;
+
+    
+    default:
+
+    printf("Escolha uma opção válida");
+
+    break;
+    }    
 
 return 0;
 } 
+
+
+
+
+
+
+
+//O nome dos dois países.
+ 
+//Os dois atributos usados na comparação.
+ 
+//Os valores de cada atributo para cada carta.
+ 
+//A soma dos atributos para cada carta.
+ 
+//Qual carta venceu (ou se houve empate).
