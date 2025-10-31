@@ -28,6 +28,7 @@ int main() {
   float pib2 = 45646;
   int atributo2, resultado2, exibir_pop2, exibir_pontos_truisticos2;
   float exibir_pib2, exibir_area2, exibir_dens_pop2;
+  float exibirvalor1, exibirvalor2;
     
 
   
@@ -44,7 +45,7 @@ int main() {
 
 // Menu para escolha dos atributos
 
-    printf("///   ***Bem vindo ao super trunfo \n\n***   ///");
+    printf("///   ***Bem vindo ao super trunfo ***   ///\n\n");
     printf("Escolha qual atributo quer comparar \n\n");
     printf("1 -> População \n");
     printf("2 -> Área \n");
@@ -60,7 +61,9 @@ case 1:
 
     printf("Você escolheu população \n\n");
     resultado1 = pop1 > pop2 ? 1:0;
-    exibir_pop1 = pop1;
+    exibirvalor1 = pop1;
+    exibirvalor2 = pop2;
+
 
     break;
 
@@ -68,7 +71,8 @@ case 2:
 
     printf("Você escolheu área \n\n");
     resultado1 = area1 > area2 ? 1:0;
-    exibir_area1 = area1;
+    exibirvalor1 = area1;
+    exibirvalor2 = area2;
 
     break;
 
@@ -76,7 +80,8 @@ case 3:
 
     printf("Você escolheu PIB \n\n");
     resultado1 = pib1 > pib2 ? 1:0;
-    exibir_pib1 = pib1;
+    exibirvalor1 = pib1;
+    exibirvalor2 = pib2;
 
     break;
 
@@ -84,7 +89,8 @@ case 4:
 
     printf("Você escolheu ponotos turisticos \n\n");
     resultado1 = pontos_turisticos1 > pontos_turisticos2 ? 1:0;
-    exibir_pontos_truisticos1 = pontos_turisticos1;
+    exibirvalor1 = pontos_turisticos1;
+    exibirvalor2 = pontos_turisticos2;
 
     break;
 
@@ -92,7 +98,8 @@ case 5:
 
     printf("Você escolheu densidade demográfica \n\n");
     resultado1 = dens_pop1 < dens_pop2 ? 1:0;
-    exibir_dens_pop1 = dens_pop1;
+    exibirvalor1 = dens_pop1;
+    exibirvalor2 = dens_pop2;
 
     break;
 
@@ -104,9 +111,8 @@ case 5:
     break;
     }    
 
-
-    printf("///   ***Bem vindo ao super trunfo \n\n***   ///");
-    printf("Escolha qual atributo quer comparar \n\n");
+   
+    printf("Escolha o segundo atributo que quer comparar \n\n");
     printf("1 -> População \n");
     printf("2 -> Área \n");
     printf("3 -> PIB \n");
@@ -129,6 +135,8 @@ case 1:
 
     printf("Você escolheu população\n\n");
     resultado2 = pop1 > pop2 ? 1:0;
+    exibirvalor1 = pop1;
+    exibirvalor2 = pop2;
 
     break;
 
@@ -136,6 +144,8 @@ case 2:
 
     printf("Você escolheu área\n\n");
     resultado2 = area1 > area2 ? 1:0;
+    exibirvalor1 = area1;
+    exibirvalor2 = area2;
 
     break;
 
@@ -143,6 +153,8 @@ case 3:
 
     printf("Você escolheu PIB\n\n");
     resultado2 = pib1 > pib2 ? 1:0;
+    exibirvalor1 = pib1;
+    exibirvalor2 = pib2;
 
     break;
 
@@ -150,6 +162,8 @@ case 4:
 
     printf("Você escolheu ponotos turisticos \n\n");
     resultado2 = pontos_turisticos1 > pontos_turisticos2 ? 1:0;
+    exibirvalor1 = pontos_turisticos1;
+    exibirvalor2 = pontos_turisticos2;
 
     break;
 
@@ -157,6 +171,8 @@ case 5:
 
     printf("Você escolheu densidade demográfica \n\n");
     resultado2 = dens_pop1 < dens_pop2 ? 1:0;
+    exibirvalor1 = dens_pop1;
+    exibirvalor2 = dens_pop2;
 
     break;
 
@@ -171,7 +187,8 @@ case 5:
 //Área para exibição dos resultados
 
         if (resultado1 < resultado2) {
-       
+    printf("carta %d -> %.1f \n", numero_carta1, exibirvalor1);
+    printf("carta %d -> %.1f \n\n", numero_carta2, exibirvalor2);
     
     printf("Carta %d Venceu!! \n", numero_carta1);
         
