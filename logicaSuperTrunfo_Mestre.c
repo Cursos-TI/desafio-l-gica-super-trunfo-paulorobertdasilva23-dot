@@ -13,8 +13,8 @@ int main() {
   char cidade1[30] = "Maranguape";
   float area1 = 20000;
   float pib1 = 100000;
-  int atributo1, resultado1;
-  
+   int atributo1, resultado1, exibir_pop1, exibir_pontos_truisticos1;
+  float exibir_pib1, exibir_area1, exibir_dens_pop1;
 
 
 //variáveis para armazenar os valores da carta 2
@@ -26,8 +26,9 @@ int main() {
   char cidade2[30] = "Maraponga";
   float area2 = 12131;
   float pib2 = 45646;
- int atributo2, resultado2;
-  
+  int atributo2, resultado2, exibir_pop2, exibir_pontos_truisticos2;
+  float exibir_pib2, exibir_area2, exibir_dens_pop2;
+    
 
   
 
@@ -59,6 +60,7 @@ case 1:
 
     printf("Você escolheu população \n\n");
     resultado1 = pop1 > pop2 ? 1:0;
+    exibir_pop1 = pop1;
 
     break;
 
@@ -66,6 +68,7 @@ case 2:
 
     printf("Você escolheu área \n\n");
     resultado1 = area1 > area2 ? 1:0;
+    exibir_area1 = area1;
 
     break;
 
@@ -73,6 +76,7 @@ case 3:
 
     printf("Você escolheu PIB \n\n");
     resultado1 = pib1 > pib2 ? 1:0;
+    exibir_pib1 = pib1;
 
     break;
 
@@ -80,11 +84,15 @@ case 4:
 
     printf("Você escolheu ponotos turisticos \n\n");
     resultado1 = pontos_turisticos1 > pontos_turisticos2 ? 1:0;
+    exibir_pontos_truisticos1 = pontos_turisticos1;
+
+    break;
 
 case 5:
 
     printf("Você escolheu densidade demográfica \n\n");
     resultado1 = dens_pop1 < dens_pop2 ? 1:0;
+    exibir_dens_pop1 = dens_pop1;
 
     break;
 
@@ -143,6 +151,8 @@ case 4:
     printf("Você escolheu ponotos turisticos \n\n");
     resultado2 = pontos_turisticos1 > pontos_turisticos2 ? 1:0;
 
+    break;
+
 case 5:
 
     printf("Você escolheu densidade demográfica \n\n");
@@ -158,13 +168,15 @@ case 5:
     break;
     }    
 
+//Área para exibição dos resultados
 
         if (resultado1 < resultado2) {
-
-    printf("Carta %s Venceu!! \n", numero_carta1);
+       
+    
+    printf("Carta %d Venceu!! \n", numero_carta1);
         
 }   else if (resultado1 > resultado2){
-    printf("Carta %s Venceu!! \n", numero_carta2);
+    printf("Carta %d Venceu!! \n", numero_carta2);
 
 
 }
