@@ -56,7 +56,7 @@ int main() {
 case 1:
 
     printf("Você escolheu população \n\n");
-    resultado1 = pop1;
+    resultado1 = pop1 > pop2 ? 1:0;
     exibir_atributo1_valor1 = pop1;
     exibir_atributo1_valor2 = pop2;
 
@@ -66,7 +66,7 @@ case 1:
 case 2:
 
     printf("Você escolheu área \n\n");
-    resultado1 = area2;
+    resultado1 = area1 > area2 ? 1:0;
     exibir_atributo1_valor1 = area1;
     exibir_atributo1_valor2 = area2;
 
@@ -131,7 +131,7 @@ case 5:
 case 1:
 
     printf("Você escolheu população\n\n");
-    resultado2 = pop2;
+    resultado2 = pop2 > pop1 ? 1:0;
     exibir_atributo2_valor1 = pop1;
     exibir_atributo2_valor2 = pop2;
 
@@ -140,7 +140,7 @@ case 1:
 case 2:
 
     printf("Você escolheu área\n\n");
-   resultado2 = area2;
+   resultado2 = area2 > area1;
     exibir_atributo2_valor1 = area1;
     exibir_atributo2_valor2 = area2;
 
@@ -149,7 +149,7 @@ case 2:
 case 3:
 
     printf("Você escolheu PIB\n\n");
-    resultado2 = pib1 > pib2 ? 1:0;
+    resultado2 = pib2 > pib1 ? 1:0;
     exibir_atributo2_valor1 = pib1;
     exibir_atributo2_valor2 = pib2;
 
@@ -158,7 +158,7 @@ case 3:
 case 4:
 
     printf("Você escolheu ponotos turisticos \n\n");
-    resultado2 = pontos_turisticos1 > pontos_turisticos2 ? 1:0;
+    resultado2 = pontos_turisticos2 > pontos_turisticos1 ? 1:0;
     exibir_atributo2_valor1 = pontos_turisticos1;
     exibir_atributo2_valor2 = pontos_turisticos2;
 
@@ -187,16 +187,14 @@ case 5:
 
 
 
-     printf("///   ***Resultado final***   ///\n");
+     printf("///   ***Resultado final***   /// \n\n");
     
-        if (resultado1 < resultado2){
-        printf("carta %d venceu", numero_carta1);
+        if (resultado1 >= 1){
+        printf("carta %d venceu \n", numero_carta1);
 
-        }else {printf("carta %d venceu", numero_carta1);
-        
-       
+        }else if(resultado2 < 0 ){printf("carta %d venceu \n", numero_carta1);
             
-        }
+        }else printf("empate \n");
         
         
         
