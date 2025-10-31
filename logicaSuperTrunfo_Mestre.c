@@ -57,33 +57,33 @@ int main() {
 
 case 1:
 
-    printf("Você escolheu população");
+    printf("Você escolheu população \n\n");
     resultado1 = pop1 > pop2 ? 1:0;
 
     break;
 
 case 2:
 
-    printf("Você escolheu área");
+    printf("Você escolheu área \n\n");
     resultado1 = area1 > area2 ? 1:0;
 
     break;
 
 case 3:
 
-    printf("Você escolheu PIB");
+    printf("Você escolheu PIB \n\n");
     resultado1 = pib1 > pib2 ? 1:0;
 
     break;
 
 case 4:
 
-    printf("Você escolheu ponotos turisticos");
+    printf("Você escolheu ponotos turisticos \n\n");
     resultado1 = pontos_turisticos1 > pontos_turisticos2 ? 1:0;
 
 case 5:
 
-    printf("Você escolheu densidade demográfica");
+    printf("Você escolheu densidade demográfica \n\n");
     resultado1 = dens_pop1 < dens_pop2 ? 1:0;
 
     break;
@@ -109,7 +109,7 @@ case 5:
 
         if(atributo1 == atributo2){
 
-    printf("Você escolheu o mesmo atributo");
+    printf("Você escolheu o mesmo atributo\n\n");
 
         }
 
@@ -119,33 +119,33 @@ case 5:
 
 case 1:
 
-    printf("Você escolheu população");
+    printf("Você escolheu população\n\n");
     resultado2 = pop1 > pop2 ? 1:0;
 
     break;
 
 case 2:
 
-    printf("Você escolheu área");
+    printf("Você escolheu área\n\n");
     resultado2 = area1 > area2 ? 1:0;
 
     break;
 
 case 3:
 
-    printf("Você escolheu PIB");
+    printf("Você escolheu PIB\n\n");
     resultado2 = pib1 > pib2 ? 1:0;
 
     break;
 
 case 4:
 
-    printf("Você escolheu ponotos turisticos");
+    printf("Você escolheu ponotos turisticos \n\n");
     resultado2 = pontos_turisticos1 > pontos_turisticos2 ? 1:0;
 
 case 5:
 
-    printf("Você escolheu densidade demográfica");
+    printf("Você escolheu densidade demográfica \n\n");
     resultado2 = dens_pop1 < dens_pop2 ? 1:0;
 
     break;
@@ -158,6 +158,19 @@ case 5:
     break;
     }    
 
+
+        if (resultado1 < resultado2) {
+
+    printf("Carta %s Venceu!! \n", numero_carta1);
+        
+}   else if (resultado1 > resultado2){
+    printf("Carta %s Venceu!! \n", numero_carta2);
+
+
+}
+
+
+    
 return 0;
 } 
 
