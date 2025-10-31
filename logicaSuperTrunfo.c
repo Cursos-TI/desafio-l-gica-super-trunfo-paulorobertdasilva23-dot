@@ -174,16 +174,16 @@ int main() {
 printf("///       ***Comparação das cartas***       //// \n\n");
 
 
-printf("Carta 1 -> %s:, %d \n", cidade1, pop1);
-printf("Carta 2 -> %s:, %d \n", cidade2, pop2);
+printf("Carta 1 -> %s:, %.2f \n", cidade1, pop1);
+printf("Carta 2 -> %s:, %.2f \n", cidade2, pop2);
 
 if(pop1 > pop2){
 
-    printf("Carta 1 venceu -> %d", pop1);
+    printf("Carta 1 venceu -> %.2f", pop1);
 
 }else{
 
-    printf("Carta 2 venceu -> %d", pop2);
+    printf("Carta 2 venceu -> %.2f", pop2);
 
 }    
 
