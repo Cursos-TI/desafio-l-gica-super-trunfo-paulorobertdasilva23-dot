@@ -76,7 +76,7 @@ int main() {
 
 //Informando o usuário a repetir o processo para a próxima carta 
 
-   print    f("Agora que você já aprendeu como prencher sua carta repita o porcesso pra a segunda carta \n\n");
+   printf("Agora que você já aprendeu como prencher sua carta repita o porcesso pra a segunda carta \n\n");
 
 
 
@@ -138,34 +138,36 @@ int main() {
 
 // Menu interativo
 
-    printf("Escolha qual atributo quer comparar");
-    printf("1 -> Área");
-    printf("2 -> População");
-    printf("3 -> PIB");
-    printf("4 -> Pontos turísticos");
-    printf("5 -> Densidade demográfica");
+    printf("Escolha qual atributo quer comparar \n\n");
+    printf("1 -> Área \n");
+    printf("2 -> População \n");
+    printf("3 -> PIB \n");
+    printf("4 -> Pontos turísticos \n");
+    printf("5 -> Densidade demográfica \n");
 
-        scanf("%d", opcao);
+        scanf("%d", &opcao);
 
 switch (opcao) {
 
     case 1:
-
-if(pop1 < pop2){
     printf("Carta 1 -> %s: população: %.2f \n", cidade1, pop1);
     printf("Carta 2 -> %s: população: %.2f \n\n", cidade2, pop2);
+
+if(pop1 > pop2){
+
     printf("Carta 1 Venceu!");
 
-else{  printf("Carta 2 Venceu!");
+}
+else{  
+
+    printf("Carta 2 Venceu!");
 
 }
 
-else if(pop1 == pop2){
+if(pop1 == pop2){
 
     printf("Empate!");
     
-}
-
 
 
     
@@ -173,29 +175,7 @@ else if(pop1 == pop2){
 
         break;
 
-    case 2:
-
-if()
-
-        break;
-
-     case 3:
-
-    if()
-
-        break;
-
-     case 4:
-
-    if()
-
-        break;
-
-     case 5:
-
-    if()
-
-        break;
+ 
 
 }
 
