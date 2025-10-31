@@ -5,28 +5,24 @@ int main() {
 // Área para definição das variáveis para armazenar as propriedades das cidades
 
 //variáveis para armazenar os valores da carta 1
- int numero_carta1 = 01;
-  int pontos_turisticos1 = 10;
-  int pop1 = 10000;
-  char UF1[3] = "CE";
-  char codigo_carta1[5] = "CE01"; 
-  char cidade1[30] = "Maranguape";
+  int numero_carta1 = 01;
+  float pontos_turisticos1 = 10;
+  int pop1 = 12000;
+  char pais1[30] = "Brasil";
   float area1 = 20000;
   float pib1 = 100000;
-  int atributo1, resultado1;
+  int atributo1, resultado1, soma_resultado;
   float exibir_atributo1_valor1, exibir_atributo1_valor2;
 
 
 
 //variáveis para armazenar os valores da carta 2
   int numero_carta2 = 02;
-  int pontos_turisticos2 = 24;
-  int pop2 = 12341;
-  char UF2[3] = "CE";
-  char codigo_carta2[5] = "CE02"; 
-  char cidade2[30] = "Maraponga";
-  float area2 = 12131;
-  float pib2 = 45646;
+  float pontos_turisticos2 = 9;
+  int pop2 = 20000;
+  char pais2[30] = "Inglaterra";
+  float area2 = 10000;
+  float pib2 = 45000;
   int atributo2, resultado2;
   float exibir_atributo2_valor1, exibir_atributo2_valor2;
     
@@ -60,7 +56,7 @@ int main() {
 case 1:
 
     printf("Você escolheu população \n\n");
-    resultado1 = pop1 > pop2 ? 1:0;
+    resultado1 = pop1;
     exibir_atributo1_valor1 = pop1;
     exibir_atributo1_valor2 = pop2;
 
@@ -70,9 +66,9 @@ case 1:
 case 2:
 
     printf("Você escolheu área \n\n");
-    resultado1 = area1 > area2 ? 1:0;
+    resultado1 = area2;
     exibir_atributo1_valor1 = area1;
-    exibir_atributo1_valor1 = area2;
+    exibir_atributo1_valor2 = area2;
 
     break;
 
@@ -135,7 +131,7 @@ case 5:
 case 1:
 
     printf("Você escolheu população\n\n");
-    resultado2 = pop1 > pop2 ? 1:0;
+    resultado2 = pop2;
     exibir_atributo2_valor1 = pop1;
     exibir_atributo2_valor2 = pop2;
 
@@ -144,7 +140,7 @@ case 1:
 case 2:
 
     printf("Você escolheu área\n\n");
-    resultado2 = area1 > area2 ? 1:0;
+   resultado2 = area2;
     exibir_atributo2_valor1 = area1;
     exibir_atributo2_valor2 = area2;
 
@@ -186,23 +182,29 @@ case 5:
     }    
 
 //Área para exibição dos resultados
+    
+//Soma para descorbeta do resultado
 
+
+
+     printf("///   ***Resultado final***   ///\n");
+    
+        if (resultado1 < resultado2){
+        printf("carta %d venceu", numero_carta1);
+
+        }else {printf("carta %d venceu", numero_carta1);
+        
+       
+            
+        }
+        
+        
         
     printf("carta %d -> %.1f \n", numero_carta1, exibir_atributo1_valor1);
     printf("carta %d -> %.1f \n\n", numero_carta2, exibir_atributo2_valor2);
-    
-        if (resultado1 > resultado2) {
-
-    printf("Carta %d Venceu!! \n", numero_carta1);
-        
-}   else if (resultado1 < resultado2){
-    printf("Carta %d Venceu!! \n", numero_carta2);
 
 
-}
 
-
-    
 return 0;
 } 
 
