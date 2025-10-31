@@ -5,20 +5,20 @@ int main() {
 // Área para definição das variáveis para armazenar as propriedades das cidades
 
 //variáveis para armazenar os valores da carta 1
-  int numero_carta1, pontos_turisticos1, opcao;
+  int numero_carta1, pontos_turisticos1, opcao, pop1;
   char UF1[3];
   char codigo_carta1[6]; 
   char cidade1[30];
-  float pop1, pib1, area1;
+  float pib1, area1;
  
 
 
 //variáveis para armazenar os valores da carta 2
-  int numero_carta2, pontos_turisticos2 ;
+  int numero_carta2, pontos_turisticos2, pop2 ;
   char UF2[3];
   char codigo_carta2[5]; 
   char cidade2[30];
-  float pop2, area2, pib2;
+  float area2, pib2;
   
 
   
@@ -55,7 +55,7 @@ int main() {
 
 //Armazenando a população da cidade informado pelo usuário
     printf("Insira a população da cidade: \n");
-        scanf("%f", &pop1);
+        scanf("%d", &pop1);
             getchar();
 
 //Armazenando a área da cidade informado pelo usuário
@@ -104,7 +104,7 @@ int main() {
 
 //Armazenando a população da cidade informado pelo usuário
     printf("Insira a população da cidade: \n");
-        scanf("%f", &pop2);
+        scanf("%d", &pop2);
             getchar();
 
 //Armazenando a área da cidade informado pelo usuário
@@ -129,12 +129,10 @@ int main() {
 // Cálculo do PIB per capita e densidade populacional das carta  1 e 2
 
   float dens_pop1 = pop1/area1;
-  float pib_per_capita1 = pib1/pop1;
+ 
 
   float dens_pop2 = pop2/area2;
-  float pib_per_capita2 = pib2/pop2;
-
-
+  
 
 // Menu interativo
 
@@ -150,8 +148,8 @@ int main() {
 switch (opcao) {
 
     case 1:
-    printf("Carta 1 -> %s: população: %.2f \n", cidade1, pop1);
-    printf("Carta 2 -> %s: população: %.2f \n\n", cidade2, pop2);
+    printf("Carta 1 -> %s: população: %d \n", cidade1, pop1);
+    printf("Carta 2 -> %s: população: %d \n\n", cidade2, pop2);
 
 if(pop1 > pop2){
 
