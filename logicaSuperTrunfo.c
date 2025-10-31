@@ -175,19 +175,19 @@ printf("///       ***Comparação das cartas***       //// \n\n");
 
 //Quando for comparar outros atributos a segunda variável nos dois printf abaixo pela variável escolhida
 
-printf("Carta 1 -> %s:, %.2f \n", cidade1, pop1);
-printf("Carta 2 -> %s:, %.2f \n", cidade2, pop2);
+printf("Carta 1 -> %s: %.2f \n", cidade1, pop1);
+printf("Carta 2 -> %s: %.2f \n\n", cidade2, pop2);
 
 //Quando for comparar outros atributos troque a variável dentro da condição do IF abaixo 
 //Obs: Se a variável escolhida for a densidade populacional troque o sinal de < pelo sinal de > dentro da condição do IF abaixo
 
 if(pop1 > pop2){
 
-    printf("Carta 1 venceu! %s", cidade1);
+    printf("Carta 1 venceu! %s \n", cidade1);
 
 }else{
 
-    printf("Carta 2 venceu! %s", cidade2);
+    printf("Carta 2 venceu! %s \n", cidade2);
 
 }    
 
